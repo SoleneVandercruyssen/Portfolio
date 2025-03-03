@@ -6,11 +6,10 @@
 
 body {
     height: 400vh;
-
 }
 
 header {
-    /* En position fixed, l'élément sort du flow de la page, sa largeru devient égale à son contenu, et l'élément se déplace avec le scrolling */
+    /* En position fixed, l'élément sort du flow de la page, sa largeur devient égale à son contenu, et l'élément se déplace avec le scrolling */
     position: fixed;
     width: 100%;
     background-color: #757474;
