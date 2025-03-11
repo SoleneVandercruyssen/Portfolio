@@ -1,0 +1,156 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.radley-regular {
+    font-family: "Radley", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.radley-regular-italic {
+    font-family: "Radley", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, black, rgb(186, 8, 221) , rgb(255, 0, 140));
+    grid-template-rows: 1fr 3fr 1fr;
+    display: grid;
+    grid-template-areas: 
+    "header header   "
+    "main main  "
+    "footer footer  ";
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    background-image:linear-gradient(to right, rgb(137, 198, 255),aliceblue  );
+    width: 100%;
+    padding: 10px;
+    grid-area: header;
+
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    grid-area: main;
+}
+
+li{
+list-style-type: none;
+float: inline-start;
+justify-content: center;
+align-items: center;
+padding: 20px;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    display: inline-block;
+}
+
+
+.photo{ 
+    color: white;
+    background-image: url(/DWWM2025/02-css/03-box-sizing/phare.jpg);
+    width: 300px;
+    height: 300px;
+    top: 20%;
+    margin-left: 82%;
+    border-radius: 50%;
+    padding: 10px 5px;
+    font-size: 1em;
+    font-weight: bold;
+    border: transparent;
+    box-shadow: 10px 5px 5px 0 rgb(0, 0, 0);
+     /* transform: translate(-50%, -50%);   */
+    transition-duration: 2s;
+    transition-delay: 0.2s;
+}
+
+li .photo:hover{
+    rotate: y 360deg;
+    transition-property: transform;
+}
+
+
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Mon portfolio */
+.flex2{
+    display: flex;
+    flex-direction: row;
+}
+
+.left{
+    float: right;
+}
+/* Mon portfolio */
+.right{
+margin-right: 20%;
+} 
+
+.btn{
+    box-shadow: 15px 5px 5px   ;
+    width: 300px;
+    height: 50px;
+    margin-left: 40%;
+    margin-top: 40%;
+    border-radius: 10px 5px;
+    background-color: purple;
+    color: white;
+}
+
+h1{
+    margin-left: 20%;
+    font-size: 2.5em;
+}
+
+p{
+    font-size: 2em;
+    text-align:center;
+    width: 50%;
+    margin-left: 7%;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    background-image:linear-gradient(to right,  aliceblue, rgb(137, 198, 255));
+    width: 100%;
+    padding: 10px;
+    grid-area: footer;
+
+}
+
+
+#github ul {
+    justify-content: right;
+} 
+
+.copyright{
+    margin-top: 3%;
+    font-size: 1em;
+
+    p{
+        margin-left: 80%;
+        justify-content: center;
+    }
+}
+
+

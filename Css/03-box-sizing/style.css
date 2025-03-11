@@ -84,7 +84,7 @@ img{
     /* Change la taille de l'image */
     width: 100%;
     height: 20vh;
-    /* Fcontionne comme background-size mais adapté à une balise image */
+    /* Fontionne comme background-size mais adapté à une balise image */
     object-fit: contain;
     /* Fonctionne comme le background-position mais adapté aux balises immage */
     object-position: center;
