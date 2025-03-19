@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta  content="author" name="Solène Vandercruyssen" >
-    <link rel="stylesheet" href="index.html">
     <link rel="stylesheet" href="contact.css">
     <title>Contact</title>
 </head>
@@ -14,39 +13,49 @@
         <nav>
             <ul>
                 <li><a class="radley-regular"  href="/Portfolio/Pages/index.html" target="_self" >Home</a></li>
-                <li><a  class="radley-regular" href="/Portfolio/Pages/about.html">Portfolio</a></li>
+                <li><a  class="radley-regular" href="/Portfolio/Pages/portfolio.html">Portfolio</a></li>
                 <li><a class="radley-regular"  href="/Portfolio/Pages/about.html">About</a></li>
                 <li><a class="radley-regular"  href="/Portfolio/Pages/contact.html">Contact</a></li> 
             </ul>
         </nav>
     </header>
 
-    <!-- Formulaire -->
+    <!-- Mes contacts -->
 <main class="flex" >   
     <div class="myContact" >
 <h1 class="radley-regular" >Here's mine !</h1> <br>
-<div><p class="radley-regular-italic" ><img src="/Portfolio/Images/icons8-phone-64.png" alt=""  class="ringAnimation" >06 44 76 78 82</p>
+<div><p class="radley-regular-italic" ><img  class="rotate"  src="/Portfolio/Images/icons8-phone-64.png" alt=""  class="ringAnimation" >06 44 76 78 82</p>
     </div>
 <br>
-<p class="radley-regular-italic" ><img src="/Portfolio/Images/icons8-mail-64.png" alt="" class="ringAnimation" > solenevandercruyssen2@gmail.com</p>
+<p class="radley-regular-italic" ><img  class="rotate" src="/Portfolio/Images/icons8-mail-64.png" alt="" class="ringAnimation" > solenevandercruyssen2@gmail.com</p>
 </div>
     
 
-<!-- Mes contacts -->
-<div class="yourContact" class="radley-regular"  >
+<!-- Formulaire -->
+<div class="yourContact"  id="borderAnimation"  class="radley-regular"  >
     <form action="" method="get">
         
-        <legend> Give me your contact ! </legend> <br>
+
+        <legend> Give me your contact ! </legend> 
+        <br>
         <label for="name">Name:</label>
-        <input type="text" name="name" id="name" required><br>
+        <input type="text" name="name" id="name" required>
+        <br>
         <label for="phone">Phone:</label>
-        <input type="tel" name="phone" id="phone" required><br>
+        <input type="tel" name="phone" id="phone" required>
+
+
+        <br>
         <label for="email">Email:</label>
+
         <input type="email" name="email" id="email" required><br>
         <label for="message">Message:</label> <br>
+
         <textarea name="message" id="message" cols="30" rows="10" required></textarea> <br>
-        <input class="radley-regular-italic"  id="send"  type="submit" value="Submit">
-    
+
+        <input class="radley-regular-italic" id="send"type="submit" value="Submit">
+        
+
     </form>
 </div>
 
@@ -60,7 +69,7 @@
         <li class="logos" ><a href="https://github.com/SoleneVandercruyssen?" target="_blank" ><img src="/Portfolio/Images/icons8-github-64.png" alt="logo github" id="github" ></a></li>
     </ul>
 
-<p class="copyright" > ©Copyright2025</p>
+<!-- <p class="copyright" > ©Copyright2025</p> -->
 </footer>
 
 </body>
