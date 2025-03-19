@@ -90,6 +90,7 @@ input{
     border-radius: 10px;
     border: 2px dotted white;
     color: white;
+    font-family: Roboto;
 }
 
 input:hover{
@@ -102,6 +103,11 @@ input:active{
     transition-property: transform;
 }
 
+
+.cartes{
+    margin-left: 1%;
+    margin-right: 2%;
+}
 
 .carte{
     margin-left: 0.5%;
@@ -126,12 +132,12 @@ input:active{
     object-fit: fill;
     border-radius: 50%;
     transition: all 1s ease-in-out;
-    transition-property: filter;
+    
 
 }
 }
 
-img :hover{
+img :active{
     filter: grayscale(100%);
     transition-duration: 2s;
     transition-property: filter;
