@@ -16,6 +16,18 @@
     font-style: italic;
 }
 
+font-face {
+    font-family: Noto_Serif;
+    src: url(/Noto_Serif/static/NotoSerif-Italic.ttf);
+}
+
+
+@font-face {
+    font-family: Roboto;
+    src: url(/Roboto_Condensed/static/RobotoCondensed-Medium.ttf);
+}
+
+
 /* Version desktop */
 
 @media  screen and (min-width: 990px) and (max-width: 1920px) {
