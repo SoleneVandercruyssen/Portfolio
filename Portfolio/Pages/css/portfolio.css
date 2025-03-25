@@ -67,7 +67,7 @@ h1{
     top: 10%;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 12px;
     font-family: Roboto;
 }
 
@@ -107,6 +107,27 @@ input:active{
 .cartes{
     margin-left: 1%;
     margin-right: 2%;
+    border: 2px dotted grey;
+    border-radius: 6%;
+}
+
+#afci{
+    height: 120px;
+}
+#simplon{
+    height: 100px;
+}
+#apple{
+    width: 200px;
+    height: 90px;
+}
+#konexio{
+    width: 120px;
+    height: 80px;
+}
+
+#popschool{
+    width: 180px;
 }
 
 .carte{

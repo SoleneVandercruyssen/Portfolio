@@ -31,7 +31,7 @@ font-face {
 body{
     width: 100%;
     height: 100vh;
-     background-color: black;
+    background-color: black;
 }
 
 header{
@@ -69,12 +69,17 @@ div{
 h1{
     color: white;
     font-size: 1.5rem;
+    margin-bottom: 5%;
+    justify-content: center;
+    align-items: center;
 }
 
 p{
     width: 20%;
     color: white;
     font-size: 1rem;
+    text-align: left;
+    font-family: Noto_Serif;
 }
 
 
@@ -82,6 +87,80 @@ main{
     width: 100%;
     height: 100vh;
 }
+
+img{
+    width: 60px;
+}
+
+.skills{
+    position: absolute; 
+    top: 30%;
+    left: 50%;
+    
+        img{
+            position: relative;
+            animation: rotation 2s linear infinite;
+            transform-origin: 55px;
+            transition-duration: 1s;
+            transition-delay: 0.5s;
+            transform: translate(-50%, -50%);
+
+            img:active{
+                rotate: (180deg); 
+            }
+}
+}
+
+@keyframes rotation {
+    0% {
+        
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}  
+
+
+#html, #css, #java, #swift, #figma, #canva, #illustrator {
+
+    transition: transform 1s linear;
+}
+#html:hover{
+    filter: contrast(800%);
+    scale: 2;
+} 
+#css:hover{
+    /* rotate: (180deg); */
+    filter: contrast(800%);
+    scale: 2;
+} 
+#java:hover{
+    /* rotate: (180deg); */
+    filter: contrast(800%);
+    scale: 2;
+} 
+#swift:hover{
+    /* rotate: (180deg); */
+    filter: contrast(800%);
+    scale: 2;
+} 
+#figma:hover{
+    /* rotate: (180deg); */
+    filter: contrast(800%);
+    scale: 2;
+} 
+#canva:hover{
+    /* rotate: (180deg); */
+    filter: contrast(800%);
+    scale: 2;
+} 
+#illustrator:hover{
+    /* rotate: (180deg); */
+    filter: contrast(800%);
+    scale: 2;
+} 
+
 
 
 footer {
@@ -101,3 +180,4 @@ footer ul {
     height: 10vh;
 
 }
+
