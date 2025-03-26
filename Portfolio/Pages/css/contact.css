@@ -16,7 +16,7 @@
     font-style: italic;
 }
 
-font-face {
+@font-face {
     font-family: Noto_Serif;
     src: url(/Noto_Serif/static/NotoSerif-Italic.ttf);
 }

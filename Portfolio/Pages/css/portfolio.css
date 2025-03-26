@@ -26,6 +26,13 @@
     src: url(/Roboto_Condensed/static/RobotoCondensed-Medium.ttf);
 }
 
+
+/* Version desktop */
+
+@media  screen and (min-width: 990px) and (max-width: 1920px) {
+
+
+
 /* BODY */
 
 body{
@@ -42,7 +49,7 @@ header{
     background-image:linear-gradient(to right, rgb(137, 198, 255),aliceblue  );
     width: 100%;
     padding: 10px;
-    grid-area: header;
+    /* grid-area: header; */
 }
 
 
@@ -85,6 +92,7 @@ p{
 
 
 input{
+    margin-top: 10%;
     background-color: blue;
     padding: 10px;
     border-radius: 10px;
@@ -105,6 +113,7 @@ input:active{
 
 
 .cartes{
+    box-shadow: 15px 5px 5px purple;
     margin-left: 1%;
     margin-right: 2%;
     border: 2px dotted grey;
@@ -138,7 +147,7 @@ input:active{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 200px;
+    height: 210px;
     gap: 40px;
 
     h2{
@@ -194,7 +203,7 @@ logos{
     width: 50px;
     height: 50px;
 }
-
+}
 /* .copyright{
     margin-top: 3%;
     font-size: 1em;
