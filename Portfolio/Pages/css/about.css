@@ -4,29 +4,27 @@
     padding: 0;
 }
 
-.radley-regular {
-    font-family: "Radley", serif;
-    font-weight: 600;
-    font-style: normal;
+
+
+.span{
+    color: rgb(247, 165, 247);
 }
 
-.radley-regular-italic {
-    font-family: "Radley", serif;
-    font-weight: 400;
-    font-style: italic;
+span{
+    color: lightskyblue;
 }
 
+/* Grands titres */
 @font-face {
     font-family: Noto_Serif;
     src: url(/Noto_Serif/static/NotoSerif-Italic.ttf);
 }
 
-
+/* Textes */
 @font-face {
-    font-family: Roboto;
-    src: url(/Roboto_Condensed/static/RobotoCondensed-Medium.ttf);
+    font-family: Oranienbaum;
+    src: url(/Portfolio/Fonts/Oranienbaum/Oranienbaum-Regular.ttf);
 }
-
 
 body{
     width: 100%;
@@ -67,18 +65,19 @@ div{
 
 h1{
     color: white;
-    font-size: 1.5rem;
+    font-size: 3rem;
     margin-bottom: 5%;
     justify-content: center;
     align-items: center;
+    font-family: Noto_Serif;
 }
 
 p{
     width: 20%;
     color: white;
-    font-size: 1rem;
+    font-size: 1.3rem;
     text-align: left;
-    font-family: Noto_Serif;
+    font-family: Oranienbaum;
 }
 
 main{
@@ -86,15 +85,16 @@ main{
     height: 100vh;
 }
 
-img{
-    width: 60px;
-}
+
 
 .skills{
     position: absolute; 
     top: 30%;
     left: 50%;
-    
+
+    img{
+    width: 60px;
+}
         img{
             position: relative;
             animation: rotation 2s linear infinite;
@@ -211,7 +211,7 @@ footer ul {
         padding: 10px;
         }
 
-    a{
+        a{
             text-decoration: none;
             color: white;
             font-size: 1rem;
@@ -219,13 +219,12 @@ footer ul {
         }
 
         h1{
-            margin-top: 120px;
-            width: 50%;
+            margin-top: 100px;
+            width: 60%;
         }
 
         p{
-            width: 40%;;
-            text-align: left;
+            width: 80%;;
         }
 
         .skills{
@@ -258,16 +257,6 @@ footer ul {
 
         img{
             width: 40px;
-        }
-
-        @keyframes rotation {
-            0% {
-                
-                transform: rotate(0deg);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
         }  
         
 }

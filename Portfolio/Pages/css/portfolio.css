@@ -4,26 +4,18 @@
     padding: 0;
 }
 
-.radley-regular {
-    font-family: "Radley", serif;
-    font-weight: 600;
-    font-style: normal;
-}
 
-.radley-regular-italic {
-    font-family: "Radley", serif;
-    font-weight: 400;
-    font-style: italic;
-}
 
+/* Grands titres */
 @font-face {
     font-family: Noto_Serif;
     src: url(/Noto_Serif/static/NotoSerif-Italic.ttf);
 }
 
+/* Textes */
 @font-face {
-    font-family: Roboto;
-    src: url(/Roboto_Condensed/static/RobotoCondensed-Medium.ttf);
+    font-family: Oranienbaum;
+    src: url(/Portfolio/Fonts/Oranienbaum/Oranienbaum-Regular.ttf);
 }
 
 
@@ -75,31 +67,65 @@ h1{
     justify-content: center;
     align-items: center;
     font-size: 12px;
-    font-family: Roboto;
+    font-family: Noto_Serif;
 }
 
 h2{
     color: white;
-    font-family: Roboto;
+    font-family: Noto_Serif;
 }
 
 p{
     color: white;
-    font-family: Noto_Serif;
+    font-family: Oranienbaum;
     font-size: 1rem;
     font-weight: 400;
 }
 
+.modale{
+    visibility: hidden; 
+}
+
+.modal-back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    height: 150px;
+    transform: translate(-50%, -50%);
+    background: rgba( 0, 0, 0, .25 )
+}
+
+.modal-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 25px;
+    background: white;
+    transform: translate(-50%, -50%)
+}
 
 input{
-    margin-top: 10%;
+    margin-top: 8%;
     background-color: blue;
     padding: 10px;
     border-radius: 10px;
     border: 2px dotted white;
     color: white;
-    font-family: Roboto;
+    font-family: Noto_Serif;
 }
+
+.close{
+    width: 6%;
+    padding: 3px;
+    border-radius: 10px;
+    border: 2px dotted white;
+    color: white;
+    font-family: Noto_Serif;
+}
+
 
 input:hover{
     transform: translateY(5px);
@@ -121,7 +147,7 @@ input:active{
 }
 
 #afci{
-    height: 120px;
+    height: 100px;
 }
 #simplon{
     height: 100px;
