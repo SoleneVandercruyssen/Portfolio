@@ -108,7 +108,7 @@ main{
 
 h1{
     font-size: 1.5rem;
-    color: rgb(84, 171, 247);
+    color: rgb(255, 255, 255);
 }
 
 /* Formulaire */
@@ -118,11 +118,10 @@ form{
     border: 2px solid rgb(200, 20, 255);
     transition: border-width 0.6s linear;
     border-radius: 10px;
-    margin-top: 10%;
+    /* margin-top: 10%; */
+    margin: auto;
     height: 50vh;
     width: 40%;
-    /* justify-content: center;
-    align-items: center; */
 }
 
 form:hover {
@@ -151,9 +150,9 @@ form:hover {
 }
 
 legend{
-    margin-left: 15%;
+    margin-left: 28%;
     font-size: 1.5rem;
-    color: rgb(84, 171, 247);
+    color: rgb(255, 255, 255);
     font-weight: bolder;
 }
 
@@ -286,7 +285,8 @@ footer ul {
         
         h1{
             font-size: 1rem;
-            color: rgb(84, 171, 247);
+            color: rgb(255, 255, 255);
+            margin-left: 0%;
         }
 
 
@@ -324,9 +324,10 @@ footer ul {
         }
         
         legend{
-            margin-left: 15%;
+            margin-top:10px;
+            margin-left: 10%; 
             font-size: 1rem;
-            color: rgb(84, 171, 247);
+            color: rgb(255, 255, 255);
             font-weight: bolder;
         }
         
