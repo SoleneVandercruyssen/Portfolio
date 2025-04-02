@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="author"  name="Solène Vandercruyssen"  >
+    <meta content="author"  name="Solène Vandercruyssen">
+    <meta name="description" content="Portfolio">
+    <meta name="keywords" content="portfolio, numérique, développement web">
+    <meta name="og:site_name" content="Portfolio Solène Vandercruyssen">
+    <meta name="og:title" content="Mon Portfolio">
+    <meta  name="type" content="site web">
+    <meta name="og-url" content="http://127.0.0.1:5500/Portfolio/Pages/html/index.html" >
+    <meta name="robots" content="noindex, nofollow">
     <link rel="stylesheet" href="/Portfolio/Pages/css/portfolio.css">
-    <script src="/Portfolio/Pages/javascript/script.js" defer></script>
+    <script src="/Portfolio/Pages/javascript/portfolio.js" defer></script>
     <title>Portfolio</title>
 </head>
 <body>
@@ -25,45 +32,34 @@
         <a href="https://www.afci-formation.fr/" target="_blank"><img src="/Portfolio/Images/lOGO-afci-.png" alt="logo afci" id="afci"></a>
         <h2>Formation développeur web</h2>
         <p>2025-2025</p>
-        <!-- En cours -->
         <li><a href=""><input type="button" value="En savoir +" class="btn" id="btn1"></a></li>
         </div>
-
+<hr>
 <div class="cartes" id="carte2" >
     <a href="https://www.simplon.co/developpement" target="_blank"><img src="/Portfolio/Images/simplon.logo_.png" alt="logo simplon"  id="simplon"></a>
     <h2>Formation MS intégrateur/développeur</h2>
     <p>2024-2025</p>
-    <!-- Cette formation a duré 2 mois où j'ai pu renforcer mes connaissances en HTML et CSS grâce aux briefs solo et en groupes -->
     <li><a href=""><input type="button" value="En savoir +" class="btn" id="btn2"></a></li>
 </div>
-
+<hr>
 <div class="cartes" id="carte3" >
     <a href="https://www.simplon.co/developpement/apple-foundation-program" target="_blank"><img src="/Portfolio/Images/apple foundation.png" alt="logo simplon apple foundation program"  id="apple"></a>
     <h2>Créer une application avec les outils d'APPLE</h2>
     <p>2024-2024</p>
-<!-- J'ai suivi cette formation chez Simplon nommée "Apple Foundation Program". Elle a duré 1 mois. ce mois a été divisé en 4 parties.  <br> 
-1ère partie = 1 semaine sur l'UX Design (faire des recherches sur le thème choisi) Mon groupe avait choisi "La Biodiversité". <br> 
-2e partie = 1 semaine sur le maquettage <br> 
-3e partie = 1 semaine de cours sur le swift <br> 
-4e partie = codage-->
     <li><a href=""><input type="button" value="En savoir +" class="btn" id="btn3"></a></li>
 </div>
-
+<hr>
 <div class="cartes" id="carte4" >
     <a href="https://www.konexio.eu/formation-html-css-javascript" target="_blank"><img src="/Portfolio/Images/konexio.png" alt="logo konexio"  id="konexio"></a>
     <h2>Les bases (html, css et javascript)</h2>
     <p>2024-2024</p>
-<!-- Au cours de mon CEJ, j'ai commencé par faire une formation chez Konexio à Roubaix nommée "Digistart".
-Digistart est un programme basé sur des cours d'HTML, CSS et de Javascript.
-Ce programme dure en tout 20h qui ont été répartie de façon à ce que l'on fasse 4h de cours par semaine. -->
 <li><a href=""><input type="button" value="En savoir +" class="btn" id="btn4"></a></li>
 </div>
-
+<hr>
 <div class="cartes" id="carte5" >
     <a href="https://www.pop.eu.com/plate-forme-e-learning-ma-prepa-numerique/" target="_blank"><img src="/Portfolio/Images/pop school.png" alt="logo pop school"  id="popschool" ></a>
     <h2>La découverte des métiers du numérique</h2>
     <p>2024-2024</p>
-    <!-- BOOTCAMP -->
     <li><a href=""><input type="button" value="En savoir +" class="btn" id="btn5"></a></li>
 </div>
 </div>
@@ -72,11 +68,13 @@ Ce programme dure en tout 20h qui ont été répartie de façon à ce que l'on f
 <div class="modale">
     <div class="modale-back">
         <div class="modale-content">
-            <h2>Formation développeur web</h2>
+            <h1>Formation développeur web</h1>
             <p> En cours... </p>
-            <input type="button" class="close" value="Fermer"></input>
+            <input type="button" class="close" id="ferme" value="Fermer"></input>
     </div>
 </div>
+</div>
+
 </main>
 
 

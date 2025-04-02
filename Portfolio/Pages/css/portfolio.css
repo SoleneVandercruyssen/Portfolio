@@ -43,6 +43,9 @@ body{
         font-family: Oranienbaum;
     } */
 }
+
+/* Tête */
+
 header{
     top: 0;
     position: fixed;
@@ -89,14 +92,6 @@ header li:hover::after{
     width: 100%;
 }
 
-/* ul li a{
-    text-decoration: none;
-    color: black;
-    font-size: 1.3rem;
-    display: inline-block;
-} */
-
-
 
 ul li {
     list-style-type: none;
@@ -112,6 +107,9 @@ a{
     font-size: 1.3rem;
     display: inline-block;
 }
+
+/* Autres */
+
 h1{
     top: 10%;
     justify-content: center;
@@ -123,6 +121,7 @@ h1{
 h2{
     color: white;
     font-family: Noto_Serif;
+    font-size: 1rem;
 }
 
 p{
@@ -132,20 +131,34 @@ p{
     font-weight: 400;
 }
 
+/* POP UP */
+
 .modale{
-    visibility: hidden; 
+    display: none;
+    background-color: rgb(47, 0, 255);
+    width: 45%;
+    height: 30%;
+    margin-top: 0;
+    margin-left: 25%;
+    border: 2px dashed white;
+    border-radius: 15px;
+    grid-template-rows: auto 1fr auto;
+    grid-area: 
+    "h1",
+    "p",
+    ".close" ;
+    position: fixed;
 }
 
+
 .modal-back {
-    position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 200px;
+    width: 1900px;
     height: 150px;
     transform: translate(-50%, -50%);
-    background: rgba( 0, 0, 0, .25 )
+    background: rgba( 0, 0, 0, .25 );
+    border:2px solid rgb(241, 0, 221);
+    margin-left: 2%;
 }
 
 .modal-container {
@@ -168,12 +181,13 @@ input{
 }
 
 .close{
-    width: 6%;
+    width: 15%;
     padding: 3px;
     border-radius: 10px;
     border: 2px dotted white;
     color: white;
     font-family: Noto_Serif;
+    grid-area: ".close";
 }
 
 
@@ -183,7 +197,7 @@ input:hover{
 }
 
 input:active{
-    background-color: rgb(4, 4, 207);
+    background-color: rgb(116, 116, 255);
     transition-property: transform;
 }
 
@@ -192,7 +206,7 @@ input:active{
     box-shadow: 15px 5px 5px purple;
     margin-left: 1%;
     margin-right: 2%;
-    border: 2px dotted grey;
+    border: 2px dotted rgb(225, 0, 255);
     border-radius: 6%;
 }
 
@@ -298,6 +312,12 @@ footer ul {
         background-color: black; 
     }
 
+
+div{
+    width: 10%;
+}
+
+
     li{
         list-style-type: none;
         float: inline-start;
@@ -314,12 +334,26 @@ footer ul {
     }
 
     p{
+        font-size: 1rem;
         color: white;
     }
 
+    .cartes{
+        width: 50%;
+        box-shadow: 15px 5px 5px purple;
+        border: 2px dotted rgb(225, 0, 255);
+        border-radius: 6%;
+    }
+
+
+
     .carte{
         width: 100%;
-        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
 
     h2{
     width: 100px;
@@ -332,6 +366,11 @@ footer ul {
             background-color: rgba(255, 255, 255, 0.897);
         }
     }
+
+.modale{
+    display: none;
+}
+
     footer{
         position: sticky; 
         top: 100vh; 
