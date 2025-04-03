@@ -9,41 +9,69 @@
     <meta name="og:site_name" content="Portfolio Solène Vandercruyssen">
     <meta name="og:title" content="Mon Portfolio">
     <meta  name="type" content="site web">
+    <!-- l'url sera a changer lorsque le site sera mis en ligne -->
     <meta name="og-url" content="http://127.0.0.1:5500/Portfolio/Pages/html/index.html" >
     <meta name="robots" content="noindex, nofollow">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/Portfolio/Pages/css/style.css">
+    <script src="/Portfolio/Pages/javascript/script.js" defer></script>
     <title>Home</title>
 </head>
 <body>
     <header>
-        <nav>
+        <!-- Version desktop -->
+        <nav id="nav-desktop">
             <ul>
-                <li><a href="/Portfolio/Pages/html/index.html" target="_self" >Home</a></li>
+                <li><a href="/Portfolio/Pages/html/index.html">Home</a></li>
                 <li><a href="/Portfolio/Pages/html/portfolio.html">Portfolio</a></li>
                 <li><a href="/Portfolio/Pages/html/about.html">About</a></li>
                 <li><a href="/Portfolio/Pages/html/contact.html">Contact</a></li> 
             </ul>
         </nav>
+
+
+
+        <!-- Version mobile -->
+        <nav id="nav-mobile"> 
+<div class="hamburger-menu">
+    <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+        <!-- Une div pour les liens de navigation -->
+        <div class="menu-links">
+            <ul>
+                <li><a href="/Portfolio/Pages/html/index.html" onclick="toggleMenu()" >Home</a></li>
+                <li><a href="/Portfolio/Pages/html/portfolio.html" onclick="toggleMenu()" >Portfolio</a></li>
+                <li><a href="/Portfolio/Pages/html/about.html" onclick="toggleMenu()" >About</a></li>
+                <li><a href="/Portfolio/Pages/html/contact.html" onclick="toggleMenu()" >Contact</a></li> 
+            </ul>
+        </div>
+</div>
+        </nav>
     </header>
+
+
+
+
 
     <main>
     <div class="flex" >
-    <li> <a href="/Portfolio/Pages/portfolio.html"><button class="photo" ></a> Photo</button></li>
+    <button class="btn"> <li> <a href="/Portfolio/Pages/html/portfolio.html"> Mon portfolio</a></li> </button>
 </div>
 <h1>Hi !</h1>  <br>
 
 <div class="flex2" >
     <div class="left">
-        <p >  My name is <span>Solène Vandercruyssen</span>, i'm 21 years old and i'm actually learning how to be a Web Developper.
-            This is a new passion for me and i'm really excited to know more about it and to see how far i can go.
-            
+        <p>  My name is <span>Solène Vandercruyssen</span>, i'm 21 years old and i'm actually learning how to be a Web Developper.
+            This is a new passion for me and i'm really excited to know more about it and to see how far i can go.</p>
     </div>
 
     <div class="right" >
-        <button class="btn"> <li> <a href="/Portfolio/Pages/portfolio.html"> Mon portfolio</a></li> </button>
+        <li> <a href="/Portfolio/Pages/portfolio.html"><button class="photo" ></a></button></li>
     </div>
 </div>
 
