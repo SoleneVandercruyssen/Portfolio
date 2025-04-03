@@ -378,9 +378,8 @@ footer ul {
 .skills{
     display: flex;
     flex-direction: row;
-    margin-left: -15%;
+    margin-left: 0%;
 }
-
 
     footer{
         position: sticky; 
@@ -388,6 +387,7 @@ footer ul {
         background-image:linear-gradient(to right,  aliceblue, rgb(137, 198, 255));
         width: 100%;
         min-height: 8vh;
+        margin: 0;
     }
     
     footer ul {

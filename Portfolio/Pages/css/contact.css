@@ -305,6 +305,7 @@ footer ul {
         overflow: hidden;
         transition: all 0.3 ease-in-out ;
         background-image:linear-gradient(to right, rgb(137, 198, 255),aliceblue  );
+        z-index: 1;
     }
     
 
