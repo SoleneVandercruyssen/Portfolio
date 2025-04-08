@@ -218,6 +218,7 @@ textarea{
 }
 
 #send{
+    font-family: Noto_Serif;
     margin-left: 35%;
     width: 100px;
     font-size: 1rem;
