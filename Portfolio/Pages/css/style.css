@@ -105,7 +105,6 @@ ul li a{
 
 
 main{
-    
     grid-area: main;
 }
 
@@ -185,7 +184,9 @@ p{
 }
 
 footer{
+    border: 2px solid red;
     position: sticky; 
+    display: block;
     top: 100vh; 
     background-image:linear-gradient(to right,  aliceblue, rgb(137, 198, 255));
     width: 100%;
@@ -193,6 +194,7 @@ footer{
 }
 
 footer ul {
+    border: 2px solid blue;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -201,6 +203,22 @@ footer ul {
     align-items:left ; 
     height: 100%;
 }
+
+/* ! footer trop grand */
+/* .copyright{
+    
+    border: 2px solid yellow;
+    font-size: 1.5rem;
+    width: 10%;
+    height: 5vh;
+    color: #000;
+
+    p{
+        margin: 0; 
+        
+    }
+} */
+
 
 
 }
