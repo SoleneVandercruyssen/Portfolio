@@ -152,12 +152,14 @@ p{
 .modale.active {
     visibility: visible;
     opacity: 1;
+    /* opacity empêcher la modale 1 de se fermer car lorsque l'on cliquer sur le bouton on cliqué en réalité sur la div de la modale 3 qui été en opacity : 0 */
+    z-index: 2;
 }
 
 .modale1{
     
     margin-left: 1%;
-    margin-top: 1%;
+    margin-top: 3%;
     color: white;
     width: 325px;
     height: 200px;
@@ -165,8 +167,8 @@ p{
     }
 
     .modale2{
-    margin-left: 14%;
-    margin-top: 2%;
+    margin-left: 18%;
+    margin-top: 3%;
     color: white;
     width: 310px;
     height: 200px;
@@ -196,6 +198,8 @@ li{
         height: 280px;
         border: 2px dashed rgb(255, 255, 255);
         padding: 10px;
+        margin-left: 35%;
+        margin-top: 3%;
 
 
         #video{
@@ -207,28 +211,27 @@ li{
     .modale4{
 
         color: white;
-        width: 450px;
-        height: 200px;
+        width: 370px;
+        height: 160px;
         border: 2px dashed rgb(255, 255, 255);
         padding: 10px;
+        margin-top: 3%;
+        margin-left: 59%;
     }
 
     .modale5{
         color: white;
-        width: 450px;
-        height: 200px;
+        width: 350px;
+        height: 400px;
         border: 2px dashed rgb(255, 255, 255);
         padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
+        margin-left: 80%;
+        margin-top: 3%;
         
-/* ! Faire un bouton + pour afficher seulement les images */
-
-        /* img{
-            width: 100px;
-        } */
+        img{
+            width: 50px;
+        }
     }
-
 
 
 /* .modal-back {
@@ -239,7 +242,7 @@ li{
     background: rgba( 0, 0, 0, .25 );
     border:2px solid rgb(241, 0, 221);
     margin-left: 2%;
-} */ */
+} */
 
 .modal-container {
     position: fixed;
@@ -285,6 +288,8 @@ input:active{
 }
 
 
+/* ! Cartes */
+
 .cartes{
     box-shadow: 15px 5px 5px purple;
     margin-left: 1%;
@@ -315,8 +320,8 @@ input:active{
 .carte{
     margin-left: 0.5%;
     display: grid;
-	grid-template-rows: 40% auto 1fr ;
-    margin-top: 20%;
+	grid-template-rows: 40% auto 1fr;
+    margin-top: 10%;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -346,6 +351,15 @@ img :active{
     transition-property: filter;
 }
 
+.side{
+    display: flex;
+}
+
+.download{  
+    margin-left: 7%;
+    width: 100px;
+    color: white;
+}
 
 
 div {
@@ -357,7 +371,7 @@ footer {
     top: 100vh;
     width: 100%;
     height: 10vh;
-    background-image: linear-gradient(to right, rgb(137, 198, 255),aliceblue);
+    background-image:linear-gradient(to right,  aliceblue, rgb(137, 198, 255));
     position: sticky; 
     grid-area: footer;
 }
@@ -373,11 +387,25 @@ footer ul {
 }
 }
 
+#à_côté{
+    width: 100%;
+}
 
 
+.copyright{
+    
+    /* border: 2px solid yellow; */
+    font-size: 1.3rem;
+    width: 20%;
+    height: 20px;
+    color: #000000;
+    margin-top: 1%;
+}
 
 
-
+.width{
+    width: 50px;
+}
 /* Version mobile */
 
 @media screen and (min-width: 340px) and (max-width:490px ) {

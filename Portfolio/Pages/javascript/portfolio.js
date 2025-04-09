@@ -22,4 +22,3 @@ closeButtons.forEach((closeButton, index) => {
         
 });});
 
-
