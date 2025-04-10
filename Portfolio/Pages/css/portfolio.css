@@ -233,17 +233,6 @@ li{
         }
     }
 
-
-/* .modal-back {
-    top: 0;
-    width: 1900px;
-    height: 150px;
-    transform: translate(-50%, -50%);
-    background: rgba( 0, 0, 0, .25 );
-    border:2px solid rgb(241, 0, 221);
-    margin-left: 2%;
-} */
-
 .modal-container {
     position: fixed;
     top: 50%;
@@ -365,7 +354,9 @@ img :active{
 div {
     width: 100%;
 }
-/* Footer */
+
+
+/* ! Footer */
 
 footer {
     top: 100vh;
@@ -393,8 +384,6 @@ footer ul {
 
 
 .copyright{
-    
-    /* border: 2px solid yellow; */
     font-size: 1.3rem;
     width: 20%;
     height: 20px;
@@ -406,7 +395,10 @@ footer ul {
 .width{
     width: 50px;
 }
-/* Version mobile */
+
+
+
+/* ! Version mobile */
 
 @media screen and (min-width: 340px) and (max-width:490px ) {
 
@@ -518,7 +510,7 @@ footer ul {
 
     .cartes{
         margin-top: 10%;
-        width: 50%;
+        width: 57%;
         box-shadow: 15px 5px 5px purple;
         border: 2px dotted rgb(225, 0, 255);
         border-radius: 6%;
@@ -543,9 +535,6 @@ footer ul {
     }
     
     .modale1{
-        
-        /* margin-left: 40%; */
-        /* margin-top: 5%; */
         color: white;
         width: 350px;
         height: 200px;
@@ -558,12 +547,8 @@ footer ul {
         height: 200px;
         border: 2px dashed rgb(255, 255, 255);
         padding: 10px;
-        /* top: 35%; */
-        /* margin-left: 40%;
-        position: fixed; */
         background-color: #000;
     
-        /* backdrop-filter: blur(100); */
     
     h1{
         font-size: 1rem;
@@ -611,17 +596,6 @@ footer ul {
             }
         }
     
-    
-    
-    /* .modal-back {
-        top: 0;
-        width: 1900px;
-        height: 150px;
-        transform: translate(-50%, -50%);
-        background: rgba( 0, 0, 0, .25 );
-        border:2px solid rgb(241, 0, 221);
-        margin-left: 2%;
-    } */ */
     
     .modal-container {
         position: fixed;
@@ -689,42 +663,123 @@ footer ul {
     }
 
 #carte5{
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
 
 
-/* POP-UP */
+/* ! POP-UP */
+
     .modale1{
-    display: none;
+    font-size: 0.5rem;
+    background-color: #000;
+    left: 17%;
+    top: 10%;
+    width: 35%;
+    height: 18%;
+
+.close{
+    width: 70px;
+}
+p{
+    font-size: 1rem;
+}
+
     }
     .modale2{
-    display: none;
+        background-color: #000;
+        font-size: 0.5rem;
+        left: 15%;
+        top: 35%;
+        width: 50%;
+        height:30%;
+
+        .close{
+            width: 70px;
+        }
+
+        p{
+            font-size: 1rem;
+        }
     }
     .modale3{
-    display: none;
+        font-size: 0.5rem;
+        justify-content: justify;
+        height: 55%;
+        left: 52%;
+        width: 45%;
+        top: 40%;
+        background-color: #000;
+
+        .close{
+            width: 70px;
+        } 
+
+p{
+    font-size: 0.7rem;
+}
+
+        #video{
+            width: 50px;
+            height: 80px;
+        }
     }
     .modale4{
-    display: none;
-    }
+        background-color: #000;
+        font-size: 0.5rem;
+        left: 0;
+        width: 60%;
+        top: 80%;
+        height: 20%;
+
+        .close{
+            width: 70px;
+        }
+
+        p{
+            font-size: 0.7rem;
+        }
+        
+    } 
     .modale5{
-    display: none;
+        background-color: #000;
+        font-size: 0.5rem;
+        left: 38%;
+        width: 60%;
+        height: 63%;
+        top: 36%;
+        bottom: 0;
+
+        .close{
+            width: 70px;
+        }  
+
+        p{
+            font-size: 0.7rem;
+        }
+    }
+
+/* ! FOOTER */
+
+    #à_côté{
+    width: 100%;
     }
 
     footer{
-    position: sticky; 
-    top: 100vh; 
-    background-image:linear-gradient(to right,  aliceblue, rgb(137, 198, 255));
-    width: 100%;
-    min-height: 8vh;
+        position: sticky; 
+        top: 100vh; 
+        background-image:linear-gradient(to right,  aliceblue, rgb(137, 198, 255));
+        width: 100%;
+        height: 10vh;
+        grid-area: footer;
     }
-
+    
     footer ul {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: right;
-    align-items:left ; 
-    height: 10px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: right;
+        align-items:left ; 
+        height: 8vh;
     }
 
     a{
