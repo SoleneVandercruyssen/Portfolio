@@ -232,6 +232,10 @@ footer ul {
         display: none;
     }
 
+    #nav-mobile{
+        background-image:linear-gradient(to right, rgb(137, 198, 255),aliceblue  );
+    }
+
 body{
     background-color: black;
     height: 100vh;
@@ -249,7 +253,7 @@ body{
 }
 
 .photo{ 
-    color: white;
+    color: rgb(0, 0, 0);
     background-image: url(/DWWM2025/02-css/03-box-sizing/phare.jpg);
     background-size: contain;
     width: 150px;
@@ -276,7 +280,7 @@ body{
 .hamburger-icon span {
     width: 100%;
     height: 2px;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     transition: all 0.3 ease-in-out ;
 }
 
