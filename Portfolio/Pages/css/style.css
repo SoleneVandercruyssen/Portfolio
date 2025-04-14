@@ -8,7 +8,7 @@
 /* Grands titres */
 @font-face {
     font-family: Noto_Serif;
-    src: url(/Noto_Serif/static/NotoSerif-Italic.ttf);
+    src: url(/Portfolio/Fonts/Noto_Serif/static/NotoSerif-Italic.ttf);
 }
 
 /* Textes */
@@ -214,7 +214,7 @@ footer ul {
 
 .copyright{
     font-size: 1.3rem;
-    width: 20%;
+    /* width: 20%; */
     height: 20px;
     color: #000000;
     margin-top: 1%;
