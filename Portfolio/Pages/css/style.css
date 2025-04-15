@@ -110,21 +110,19 @@ main{
 
 
 .photo{ 
-    color: white;
-    background-image: url(/DWWM2025/02-css/03-box-sizing/phare.jpg);
-    background-size: contain;
-    width: 300px;
-    height: 300px;
-    margin-top: 10%;
+    width: 350px;
+    height: 350px;
     float: right;
     margin-right: 15%; 
     border-radius: 50%;
-    padding: 10px 5px;
-    font-size: 1em;
-    font-weight: bold;
-    border: transparent;
-    box-shadow: 10px 5px 5px 0 rgb(0, 0, 0);
+    box-shadow: 10px 5px 5px 0 rgb(144, 183, 255);
+    transition: transform 1s linear;
 }
+
+.photo:hover{
+    transform : rotate(360deg);
+}
+
 
 .flex2{
     display: flex;
@@ -138,9 +136,9 @@ main{
 
 .right{
     width: 30%;
-margin-right: 5%;   
-transition-duration: 2s; 
-transition-property: transform;
+    margin-right: 5%;   
+    transition-duration: 2s; 
+    transition-property: transform;
 } 
 
 .btn{ 
@@ -221,9 +219,6 @@ footer ul {
 }
 }
 
-
-
-
 /* Version mobile */
 
 @media screen and (min-width:360px ) and (max-width:430px)  {
@@ -244,25 +239,27 @@ body{
     flex-direction: column;
 }
 
+
 .flex{
     width: 50%;
     display: flex;
     flex-direction: column;
     margin-left: 15%;
-    /* top: 0; */
 }
 
 .photo{ 
-    color: rgb(0, 0, 0);
-    background-image: url(/DWWM2025/02-css/03-box-sizing/phare.jpg);
-    background-size: contain;
-    width: 150px;
-    height: 150px;
-    margin-top: 10%; 
+    width: 200px;
+    height: 200px;
+    margin-top: 15%; 
     border-radius: 50%;
-    padding: 10px 5px;
-    margin-left: 70%;
+    margin-left: 45%;
+    box-shadow: 10px 5px 5px 0 rgb(144, 183, 255);
+    /* transition: transform 1s linear; */
 }
+
+/* .photo:active{
+    transform : rotate(360deg);
+} */
 
 .hamburger-menu{
     position: relative;
@@ -363,14 +360,14 @@ p{
 
 .btn{ 
     box-shadow: 10px 5px 5px ;
-    width: 150px;
-    height: 50px;
+    /* width: 150px;
+    height: 50px; */
     margin-left: 30%; 
-    margin-top: 30%;  
+    margin-top: 35%;  
     color: white;
     border-radius: 10px 5px;
     background-color: rgb(0, 0, 0);
-    /* ! voir pour agrandir la taille du a (lighthouse) */
+
     a{
         
         font-family: Oranienbaum;
@@ -410,10 +407,9 @@ img{
 width: 40px;
 }
         h1{
-            margin-top: 5%;
+            margin-top: 15%;
             font-family: Noto_Serif;
             margin-left:45%;
-            font-size: 1.5em;
             color: white;
         }
 }
