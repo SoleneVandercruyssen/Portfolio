@@ -1,12 +1,14 @@
  # <font color='red'> Portfolio 2025 </font>
 
+- 1 page index.html
+  
  ## <font color='lightblue'> Composants </font>
 
  ### 1 Dossier Page
 
   #### 1 Dossier HTML
 
-    - 1 page index.html
+    
     - 1 page contact.html
     - 1 page portfolio.html
     - 1 page about.html
