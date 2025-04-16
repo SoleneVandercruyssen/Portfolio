@@ -4,8 +4,10 @@
 - 1 page contact.html
 - 1 page portfolio.html
 - 1 page about.html 
-- 
+  
  ## <font color='lightblue'> Composants </font>
+
+ ### 1 Dossier Portfolio
 
  ### 1 Dossier Page
   
@@ -23,6 +25,10 @@
 
 ### 1 Dossier Image
 ### 1 Dossier Fonts
+
+    - Noto_Serif
+    - Oranienbaum
+    - Roboto_Condensed
 
   * .gitignore
   * robot.txt
