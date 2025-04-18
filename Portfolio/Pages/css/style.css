@@ -8,13 +8,13 @@
 /* Grands titres */
 @font-face {
     font-family: Noto_Serif;
-    src: url(/Portfolio/Fonts/Noto_Serif/static/NotoSerif-Italic.ttf);
+    src: url(../../Fonts/Noto_Serif/static/NotoSerif-Italic.ttf);
 }
 
 /* Textes */
 @font-face {
     font-family: Oranienbaum;
-    src: url(/Portfolio/Fonts/Oranienbaum/Oranienbaum-Regular.ttf);
+    src: url(../../Fonts/Oranienbaum/Oranienbaum-Regular.ttf);
 }
 
 
