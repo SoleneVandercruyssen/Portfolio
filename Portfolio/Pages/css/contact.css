@@ -267,17 +267,6 @@ footer ul {
 
 }
 
-/* .copyright{
-    margin-top: 3%;
-    font-size: 1em;
-
-    p{
-        margin-left: 80%;
-        justify-content: center;
-    }
-} */
-
-
 /* Version mobile */
 
 @media screen and (min-width: 340px) and (max-width:490px ) {
