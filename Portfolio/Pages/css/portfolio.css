@@ -251,6 +251,7 @@ input{
     font-family: Noto_Serif;
 }
 
+
 .close{
     width: 70px;
     padding: 3px;
@@ -281,7 +282,7 @@ input:active{
 
 .cartes{
     box-shadow: 15px 5px 5px purple;
-    margin-left: 1%;
+    margin-left: 2%;
     margin-right: 2%;
     display: flex;
     flex-direction: column;
@@ -708,6 +709,10 @@ p{
 
         p{
             font-size: 1rem;
+        }
+
+        .git{
+            color: white;
         }
     }
     .modale3{
