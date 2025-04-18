@@ -37,7 +37,7 @@ body{
     "footer footer  " ; 
     width: 100%;
     height: 100vh; 
-    background-image: url(./Portfolio/Images/pexels-nickoloui-2473183.jpg);
+    background-image: url(../../Images/pexels-nickoloui-2473183.jpg);
     background-size:cover;
     background-repeat: no-repeat;
 }
