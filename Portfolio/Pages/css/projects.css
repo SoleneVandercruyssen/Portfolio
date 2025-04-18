@@ -1,0 +1,82 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Grands titres */
+@font-face {
+    font-family: Noto_Serif;
+    src: url(../../Fonts/Noto_Serif/static/NotoSerif-Italic.ttf);
+}
+
+/* Textes */
+@font-face {
+    font-family: Oranienbaum;
+    src: url(../../Fonts/Oranienbaum/Oranienbaum-Regular.ttf);
+}
+
+
+/* ! HEADER */
+
+header{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    background-image:linear-gradient(to right, rgb(137, 198, 255),aliceblue  );
+    width: 100%;
+    padding: 10px;
+    grid-area: header;
+}
+
+li{
+list-style-type: none;
+float: inline-start;
+justify-content: center;
+align-items: center;
+padding: 10px; 
+}
+
+header li {
+    transition: 1s linear;
+    transition-property: border;
+    position: relative; 
+    text-align: center;
+}
+
+header li::before,
+header li::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    border-top: 3px solid #000000;
+    transition-property: width;
+    transition-duration: 0.5s;
+}
+
+header li::before{
+    top: -3px;
+    left: 0;
+}
+header li::after{
+    bottom: -3px;
+    right: 0;
+}
+header li:hover{
+    color: #000;
+}
+/* Width est l'élément qui permet aux lignes de s'afficher */
+header li:hover::before,
+header li:hover::after{
+    width: 100%;
+}
+
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    display: inline-block;
+}
+
+/* ! FIN DU HEADER */

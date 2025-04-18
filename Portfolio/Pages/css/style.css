@@ -254,14 +254,12 @@ body{
     border-radius: 50%;
     margin-left: 45%;
     box-shadow: 10px 5px 5px 0 rgb(144, 183, 255);
-    /* transition: transform 1s linear; */
+    transition: transform 1s ease-in-out ;
 }
 
-/* .photo:active{
-    transform : rotate(360deg);
-} */
-
 .hamburger-menu{
+    top: -5px;
+    left: 5px;
     position: relative;
     display: inline-block;
 }
@@ -272,6 +270,7 @@ body{
     justify-content: space-between;
     height: 24px;
     width: 30px;
+    padding: 4%;
     cursor: pointer;
 }
 .hamburger-icon span {
@@ -311,13 +310,13 @@ max-height: 200px;
 }
 
 .hamburger-icon.open span:first-child{
-transform: rotate(45deg)  translate(10px, 5px);
+transform: rotate(45deg)  translate(8px, 6px);
 }
 .hamburger-icon.open span:nth-child(2){
 opacity: 0;
 }
 .hamburger-icon.open span:nth-child(3){
-transform: rotate(-45deg)  translate(10px, -5px);
+transform: rotate(-45deg)  translate(8px, -6px);
 }
 
 .hamburger-icon span:first-child{

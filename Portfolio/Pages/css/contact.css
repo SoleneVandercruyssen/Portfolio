@@ -156,9 +156,8 @@ form{
     border: 2px solid rgb(200, 20, 255);
     transition: border-width 0.6s linear;
     border-radius: 10px;
-    /* margin-top: 10%; */
     margin: auto;
-    height: 50vh;
+    height: 48vh;
     width: 40%;
 }
 
@@ -179,8 +178,7 @@ form:hover {
     justify-content: center;
     align-items: center;
     color: white;
-    width: 50%; 
-    /* margin-top: 10%; */
+    width: 60%; 
     margin-right: 3%;
     margin-left: 10%;
     float: right;
@@ -196,42 +194,44 @@ legend{
 
 
 label{
-    margin-left: 5%;
+    margin-left: 8%;
     font-size: 1.5rem;
 }
 
-input{
-background-color: black;
-color: white;
-box-shadow: 1px 1px 1px;
-margin-top: 3%;
-margin-bottom: 4%;
 
+input{
+    background-color: black;
+    color: white;
+    box-shadow: 1px 1px 1px;
+    margin-left: 5%;
+    margin-bottom: 4%;
 }
 
 
 textarea{
+    display: flex;
     background-color: transparent;
     color: white;
     margin-top: 5%;
     box-shadow: 1px 1px 1px;
-    margin-left: 15%;
+    margin-left: 7%;
+    width: 80%;
 }
 
 #send{
+    display: flex;
     font-family: Noto_Serif;
-    margin-left: 35%;
+    margin-left: 34%;
     width: 100px;
     font-size: 1rem;
     border-radius: 10px;
-    margin-top: 5%;
+    margin-top: 3%;
     padding: 5px;
     background-color: black;
-    /* margin-left: 33%; */
 }
 
 
-/* Bas de page */
+/* ! Bas de page */
 
 
 footer{
@@ -280,9 +280,10 @@ footer ul {
     }
 
     .hamburger-menu{
+        top: -5px;
+        left: 5px;
         position: relative;
         display: inline-block;
-        
     }
     
     .hamburger-icon{
@@ -418,12 +419,6 @@ footer ul {
             border-width: 5px;
         }
         
-        
-        /* .flex{
-            display: flex;
-        }  */
-        
-        
         .yourContact {
             display: flex;
             flex-direction: column;
@@ -462,7 +457,7 @@ footer ul {
         }
         
         textarea{
-            width: 110px;
+            width: 80%;
             background-color: transparent;
             color: white;
             margin-top: 5%;

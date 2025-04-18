@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./Portfolio/Pages/css/portfolio.css">
     <script src="./Portfolio/Pages/javascript/portfolio.js" defer></script>
     <script src="./Portfolio/Pages/javascript/script.js" defer></script>
-    <title>Portfolio</title>
+    <title>Formations</title>
 </head>
 <body>
     <header>
@@ -22,9 +22,10 @@
         <nav id="nav-desktop">
             <ul>
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./formations.html">Formations</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./contact.html">Contact</a></li> 
+                <li><a href="./projects.html">Projects</a></li> 
             </ul>
         </nav>
         <!-- Version mobile -->
@@ -36,12 +37,35 @@
         <span></span>
         </div>
         <div class="menu-links">
-            <ul>
-                <li><a href="./index.html" onclick="toggleMenu()" >Home</a></li>
-                <li><a href="./portfolio.html" onclick="toggleMenu()" >Portfolio</a></li>
-                <li><a href="./about.html" onclick="toggleMenu()" >About</a></li>
-                <li><a href="./contact.html" onclick="toggleMenu()" >Contact</a></li> 
-            </ul>
+            <!-- Version mobile -->
+        <nav id="nav-mobile"> 
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    </div>
+                    <!-- Une div pour les liens de navigation -->
+                    <div class="menu-links">
+                        <ul>
+                            <li><a href="./index.html" onclick="toggleMenu()" >Home</a></li>
+                            <li><a href="./formations.html" onclick="toggleMenu()" >Formations</a></li>
+                            <li><a href="./about.html" onclick="toggleMenu()" >About</a></li>
+                            <li><a href="./contact.html" onclick="toggleMenu()" >Contact</a></li> 
+                            <li><a href="./projects.html" onclick="toggleMenu()" >Projects</a></li> 
+                        </ul>
+                    </div>
+            </div>
+                    </nav>
+                </header>
+            
+            
+                <main>
+                <div class="flex" >
+                    <menu>
+                <button class="btn"> <li><a href="./Portfolio/Images/CV Français Professionnel Simple Moderne Blanc et Beige.pdf" download="CV"> Download CV</a></li> </button>
+            </menu>
+            </div>
         </div>
 </div>
         </nav>
