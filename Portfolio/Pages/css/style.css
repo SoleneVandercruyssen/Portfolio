@@ -176,27 +176,24 @@ p{
     margin-top: 5%;
 }
 
+
 footer{
     position: sticky; 
     top: 100vh; 
+    background-image:linear-gradient(to right,  aliceblue, rgb(137, 198, 255));
     width: 100%;
     height: 10vh;
-    background-image:linear-gradient(to right,  aliceblue, rgb(137, 198, 255));
     grid-area: footer;
 }
 
 footer ul {
-
-    border-top: 2px solid rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
     width: 100%;
-    
     justify-content: right;
     align-items:left ; 
-    height: 100%;
+    height: 10px;
 }
-
 
 #à_côté{
     width: 100%;
@@ -205,10 +202,12 @@ footer ul {
 
 .copyright{
     font-size: 1.3rem;
+    width: 20%;
     height: 20px;
     color: #000000;
     margin-top: 1%;
 }
+
 }
 
 /* Version mobile */
