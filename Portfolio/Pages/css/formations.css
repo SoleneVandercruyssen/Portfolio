@@ -181,6 +181,10 @@ li{
     list-style-type: none;
 }
 
+a{
+    color: white;
+}
+
     }
 
     .modale3{
@@ -352,7 +356,6 @@ input:active{
 div {
     width: 100%;
 }
-
 
 /* ! Footer */
 
@@ -560,6 +563,11 @@ footer ul {
         list-style-type: none;
     }
     
+    a{
+        color: white;
+    }
+    
+
         }
     
         .modale3{

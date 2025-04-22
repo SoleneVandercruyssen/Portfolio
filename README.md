@@ -4,6 +4,7 @@
 - 1 page contact.html
 - 1 page portfolio.html
 - 1 page about.html 
+- 1 page projects.html
   
  ## <font color='lightblue'> Composants </font>
 
@@ -17,6 +18,7 @@
     - 1 page contact.css
     - 1 page portfolio.css
     - 1 page about.css
+    - 1 page projects.css
   
  ### 1 Dossier Javascript
 

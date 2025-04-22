@@ -30,7 +30,7 @@
 h1{
     color: white;
     font-size: 2rem;
-    margin-top:5%;
+    margin-top: 10%;
     margin-left: 45%;
 }
 
@@ -169,7 +169,12 @@ body{
     flex-direction: column;
 }
 
-
+h1{
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 30%;
+    margin-top: 5%;
+}
 
     #nav-mobile{
         background-image:linear-gradient(to right, rgb(137, 198, 255),aliceblue  );
