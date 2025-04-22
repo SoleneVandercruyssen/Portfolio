@@ -292,6 +292,7 @@ footer ul {
         justify-content: space-between;
         height: 24px;
         width: 30px;
+        padding: 4%;
         cursor: pointer;
         
     }
@@ -324,8 +325,7 @@ footer ul {
         font-size: 1rem;
         color: black;
         font-weight: bold;
-        transition: all 0.3 ease-in-out ;
-        text-decoration: none;
+        transition: all 0.3 ease-in-out;
     }
     
     .menu-links li {
@@ -333,17 +333,17 @@ footer ul {
     }
     
     .menu-links.open{
-    max-height: 200px;
+    max-height: 400px;
     }
     
     .hamburger-icon.open span:first-child{
-    transform: rotate(45deg)  translate(10px, 5px);
+    transform: rotate(45deg)  translate(8px, 6px);
     }
     .hamburger-icon.open span:nth-child(2){
     opacity: 0;
     }
     .hamburger-icon.open span:nth-child(3){
-    transform: rotate(-45deg)  translate(10px, -5px);
+    transform: rotate(-45deg)  translate(8px, -6px);
     }
     
     .hamburger-icon span:first-child{
@@ -372,12 +372,11 @@ footer ul {
     }
 
     li{
-        list-style-type: none;
-        float: inline-start;
+        list-style: none;
         justify-content: center;
         align-items: center;
         padding: 5px;
-        }
+    }
 
         .myContact{
             margin-top: 20%;

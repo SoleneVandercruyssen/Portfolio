@@ -32,6 +32,7 @@
 
 
 body{
+    position: absolute;
     width: 100%;
     height: 100vh;
     background-color: black;
@@ -41,10 +42,6 @@ body{
     "header header   "
     "main main  "
     "footer footer ";
-
-    /* p{
-        font-family: Oranienbaum;
-    } */
 }
 
 /* Tête */
@@ -111,7 +108,7 @@ header a{
     display: inline-block;
 }
 
-/* Autres */
+/* Textes */
 
 h1{
     top: 10%;
@@ -174,12 +171,7 @@ p{
     height: 200px;
     border: 2px dashed rgb(255, 255, 255);
     padding: 10px;
-    /* top: 35%; */
-    /* margin-left: 40%;
-    position: fixed; */
     background-color: #000;
-
-    /* backdrop-filter: blur(100); */
 
 h1{
     font-size: 1rem;
@@ -364,25 +356,27 @@ div {
 
 /* ! Footer */
 
-footer {
-    top: 100vh;
+footer{
+    position: sticky; 
+    top: 100vh; 
     width: 100%;
     height: 10vh;
     background-image:linear-gradient(to right,  aliceblue, rgb(137, 198, 255));
-    position: sticky; 
     grid-area: footer;
 }
 
 footer ul {
+
+    border-top: 2px solid rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
     width: 100%;
+    
     justify-content: right;
     align-items:left ; 
-    height: 10vh;
+    height: 100%;
+}
 
-}
-}
 
 #à_côté{
     width: 100%;
@@ -395,13 +389,9 @@ footer ul {
     color: #000000;
     margin-top: 1%;
 }
+}
 
 
-/* {
-    color: white;
-    font-size: 1rem;
-    text-decoration: none;
-} */
 
 
 
@@ -469,18 +459,18 @@ footer ul {
     }
     
     .menu-links.open{
-    max-height: 200px;
-    }
+        max-height: 400px;
+        }
     
     .hamburger-icon.open span:first-child{
-    transform: rotate(45deg)  translate(10px, 5px);
+    transform: rotate(45deg)  translate(8px, 6px);
     }
     .hamburger-icon.open span:nth-child(2){
     opacity: 0;
     /* fait disparaître la barre du milieu */
     }
     .hamburger-icon.open span:nth-child(3){
-    transform: rotate(-45deg)  translate(10px, -5px);
+    transform: rotate(-45deg)  translate(8px, -6px);
     }
     
     .hamburger-icon span:first-child{
@@ -502,8 +492,7 @@ footer ul {
     }
 
     li{
-        list-style-type: none;
-        float: inline-start;
+        list-style: none;
         justify-content: center;
         align-items: center;
         padding: 5px;
@@ -793,10 +782,19 @@ p{
         top: 100vh; 
         background-image:linear-gradient(to right,  aliceblue, rgb(137, 198, 255));
         width: 100%;
-        height: 10vh;
+        height: 8vh;
         grid-area: footer;
     }
     
+    footer li{
+        list-style-type: none;
+        float: inline-start;
+        justify-content: center;
+        align-items: center;
+        padding: 5px; 
+        }
+
+
     footer ul {
         display: flex;
         flex-direction: row;

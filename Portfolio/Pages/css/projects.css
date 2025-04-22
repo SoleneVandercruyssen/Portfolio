@@ -17,9 +17,36 @@
 }
 
 
+
+
+/* VERSION DESKTOP */
+
+@media screen and (min-width: 768px ) and (max-width: 1920px) {
+
+    #nav-mobile {
+        display: none;
+    }
+
+h1{
+    color: white;
+    font-size: 2rem;
+    margin-top:5%;
+    margin-left: 45%;
+}
+
+/* ! BODY */
+
+body{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
+
 /* ! HEADER */
 
 header{
+    top: 0;
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -30,11 +57,11 @@ header{
 }
 
 li{
-list-style-type: none;
-float: inline-start;
-justify-content: center;
-align-items: center;
-padding: 10px; 
+    list-style-type: none;
+    float: inline-start;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; 
 }
 
 header li {
@@ -79,4 +106,181 @@ ul li a{
     display: inline-block;
 }
 
-/* ! FIN DU HEADER */
+header a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    display: inline-block;
+}
+
+
+
+/* ! LE FOOTER */
+
+
+footer{
+    position: sticky; 
+    top: 100vh; 
+    background-image:linear-gradient(to right,  aliceblue, rgb(137, 198, 255));
+    width: 100%;
+    height: 10vh;
+    grid-area: footer;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: right;
+    align-items:left ; 
+    height: 10px;
+}
+
+#à_côté{
+    width: 100%;
+}
+
+
+.copyright{
+    font-size: 1.3rem;
+    width: 20%;
+    height: 20px;
+    color: #000000;
+    margin-top: 1%;
+}
+
+}
+
+
+/* VERSION MOBILE */
+
+
+@media screen and (min-width:360px ) and (max-width:430px)  
+{
+    #nav-desktop{
+        display: none;
+    }
+
+body{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+    #nav-mobile{
+        background-image:linear-gradient(to right, rgb(137, 198, 255),aliceblue  );
+    }
+
+
+    .hamburger-menu{
+        top: -5px;
+        left: 5px;
+        position: relative;
+        display: inline-block;
+    }
+    
+    .hamburger-icon{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 24px;
+        width: 30px;
+        padding: 4%;
+        cursor: pointer;
+    }
+    .hamburger-icon span {
+        width: 100%;
+        height: 2px;
+        background-color: rgb(0, 0, 0);
+        transition: all 0.3 ease-in-out ;
+    }
+    
+    .menu-links{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-image: linear-gradient(to right, rgb(137, 198, 255),aliceblue);
+        width: fit-content;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3 ease-in-out ;
+    }
+    
+    .menu-links a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+        font-size: 1rem;
+        color: black;
+        font-weight: bold;
+        transition: all 0.3 ease-in-out;
+    }
+    
+    .menu-links li {
+        list-style-type: none; 
+    }
+    
+    .menu-links.open{
+    max-height: 400px;
+    }
+    
+    .hamburger-icon.open span:first-child{
+    transform: rotate(45deg)  translate(8px, 6px);
+    }
+    .hamburger-icon.open span:nth-child(2){
+    opacity: 0;
+    }
+    .hamburger-icon.open span:nth-child(3){
+    transform: rotate(-45deg)  translate(8px, -6px);
+    }
+    
+    .hamburger-icon span:first-child{
+        transform: none;
+    }
+    .hamburger-icon span:nth-child(2){
+        opacity: 1;
+    }
+    .hamburger-icon span:nth-child(3){
+        transform: none;
+    }
+    
+        li{
+            list-style: none;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+        }
+
+        /* ! FOOTER */
+        footer{
+            position: sticky; 
+            top: 100vh; 
+            background-image:linear-gradient(to right,  aliceblue, rgb(137, 198, 255));
+            width: 100%;
+            min-height: 8vh;
+        }
+        
+        footer ul {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: right;
+            align-items:left ; 
+            height: 10px;
+        }
+        
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            display: inline-block;
+        }
+        
+        img{
+        width: 40px;
+        }
+}
