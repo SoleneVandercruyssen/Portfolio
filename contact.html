@@ -67,7 +67,9 @@
 
 <!-- Formulaire -->
 <div class="yourContact"  id="borderAnimation"   >
-    <form action="" method="post">
+    <form action="https://api.web3forms.com/submit" method="post">
+
+        <input type="hidden" name="access_key" value="d5969b9a-2122-472e-8ba7-51de93146e62">
 
         <legend> Your contact ! </legend> 
         <br>
@@ -84,10 +86,9 @@
         <label for="message">Message:</label> <br>
 
         <textarea name="message" id="message" cols="30" rows="10" required></textarea> <br>
-
+        <input type="hidden" name="redirect" value="https://api.web3forms.com/success">
         <input id="send"type="submit" value="Submit">
         
-
     </form>
 </div>
 
