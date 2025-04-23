@@ -177,32 +177,39 @@ main{
     transition: transform 1s linear;
 }
 #html:hover{
-    filter: contrast(800%);
+    filter: contrast(300%);
     scale: 2;
+    animation: none;
 } 
 #css:hover{
-    filter: contrast(800%);
+    filter: contrast(300%);
     scale: 2;
+    animation: none;
 } 
 #java:hover{
-    filter: contrast(800%);
+    filter: contrast(300%);
     scale: 2;
+    animation: none;
 } 
 #swift:hover{
-    filter: contrast(800%);
+    filter: contrast(300%);
     scale: 2;
+    animation: none;
 } 
 #figma:hover{
-    filter: contrast(800%);
+    filter: contrast(300%);
     scale: 2;
+    animation: none;
 } 
 #canva:hover{
-    filter: contrast(800%);
+    filter: contrast(300%);
     scale: 2;
+    animation: none;
 } 
 #illustrator:hover{
-    filter: contrast(800%);
+    filter: contrast(300%);
     scale: 2;
+    animation: none;
 } 
 
 footer{
