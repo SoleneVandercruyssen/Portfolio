@@ -394,21 +394,30 @@ body{
     #à_côté{
         width: 100%; }
 
+#column{
+    width: 200px;
+    height: 15vh;
+    position: relative;
+    left: 25%;
+}
+
 
 .skills{
     margin-left: 5%;
-    width: 330px;
+    width: 200px;
     display: flex;
-    /* flex-direction: row; */
+    flex-direction: column;
     gap: 3px;
 }
 
-#html, #css, #java, #swift, #figma, #canva, #illustrator{
+#html, #css, #java, #swift, #figma, #canva, #angular, #php, #sql{
     border: 2px solid rgb(255, 255, 255);
     border-radius: 5px;
     padding: 3px;
     margin-left: 5px;
 }
+
+/* ! Footer */
 
 footer{
     position: sticky; 
